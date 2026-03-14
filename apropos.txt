@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos – DM IMMOBILIER</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f7e9c4, #e0c27b);
+            color: #2c2c2c;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #2c2c2c;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #3a7f5a;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: rgba(255,255,255,0.7);
+            border-radius: 15px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.png" alt="Logo DM IMMOBILIER" width="150">
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="apropos.html">À propos</a>
+        <a href="direction.html">Direction</a>
+        <a href="biens.html">Nos biens</a>
+        <a href="projets.html">Projets</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>À propos de DM IMMOBILIER</h1>
+
+    <p>
+        DM IMMOBILIER est une entreprise visionnaire dédiée à la création de mini-cités modernes,
+        écologiques et accessibles. Notre mission est de transformer les villages et zones reculées
+        en espaces de vie harmonieux, sécurisés et adaptés aux besoins des familles.
+    </p>
+
+    <p>
+        Nous croyons en un habitat durable, respectueux de l’environnement et pensé pour offrir
+        confort, modernité et bien-être. Grâce à nos projets innovants, nous contribuons à bâtir
+        un avenir meilleur pour les générations futures.
+    </p>
+
+    <p>
+        Présente en Côte d’Ivoire et en France, DM IMMOBILIER accompagne les familles, les jeunes
+        actifs et les investisseurs dans la réalisation de leurs projets immobiliers.
+    </p>
+</div>
+
+</body>
+</html>
