@@ -1,355 +1,105 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>DM IMMOBILIER - Des logements pour chaque famille</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body { margin:0; font-family:Arial, sans-serif; background:#f7f7f7; color:#222; scroll-behavior:smooth; }
+    <!-- 🔥 TITRE SEO -->
+    <title>DM IMMOBILIER – Mini-cités écologiques et logements modernes en Côte d’Ivoire & France</title>
 
-    /* COULEURS GLOBALES */
-    :root {
-      --bleu-nuit:#021528;
-      --or:#d4af37;
-      --bleu-clair:#0088bb;
-    }
+    <!-- 🔥 DESCRIPTION GOOGLE -->
+    <meta name="description" content="DM IMMOBILIER conçoit des mini-cités écologiques, modernes et accessibles en Côte d’Ivoire et en France. Logements pour familles, jeunes actifs et investisseurs. Qualité, sécurité et innovation.">
 
-    /* HEADER */
-    header {
-      position:sticky; top:0; z-index:20;
-      background:#ffffff;
-      padding:10px 40px;
-      display:flex; justify-content:space-between; align-items:center;
-      box-shadow:0 2px 6px rgba(0,0,0,0.1);
-    }
-    header img { height:55px; }
-    header nav a {
-      color:#333; margin-left:18px; text-decoration:none; font-size:15px; font-weight:bold;
-    }
-    header nav a:hover { color:var(--bleu-clair); }
+    <!-- 🔑 MOTS-CLÉS (optionnel mais utile) -->
+    <meta name="keywords" content="immobilier, Côte d’Ivoire, mini-cités, logements modernes, DM IMMOBILIER, écoquartiers, construction, Abidjan, France, maisons, villas, projets immobiliers">
 
-    /* HERO PREMIUM */
-    .hero-wrapper {
-      position:relative;
-      height:80vh;
-      min-height:480px;
-      color:#fff;
-      overflow:hidden;
-    }
-    .hero-bg {
-      position:absolute; inset:0;
-      background:url('images/villa1.jpg') center/cover no-repeat;
-      transform:scale(1.05);
-      filter:brightness(0.7);
-    }
-    .hero-overlay {
-      position:absolute; inset:0;
-      background:linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.2));
-    }
-    .hero-content {
-      position:relative;
-      z-index:2;
-      padding:120px 40px 40px;
-      max-width:1100px;
-      margin:0 auto;
-    }
-    .hero-content h1 {
-      font-size:42px;
-      max-width:700px;
-      margin-bottom:15px;
-    }
-    .hero-content p {
-      font-size:20px;
-      max-width:600px;
-      margin-bottom:25px;
-    }
-    .hero-badges {
-      display:flex; gap:15px; flex-wrap:wrap; margin-bottom:25px;
-      font-size:13px;
-    }
-    .hero-badge {
-      border:1px solid rgba(255,255,255,0.6);
-      border-radius:20px;
-      padding:6px 14px;
-    }
-    .btn-gold {
-      background:var(--or); color:#000; padding:12px 25px;
-      border-radius:4px; text-decoration:none; font-weight:bold;
-      display:inline-block; margin-right:10px;
-    }
-    .btn-outline {
-      border:1px solid #fff; color:#fff; padding:11px 22px;
-      border-radius:4px; text-decoration:none; font-weight:bold;
-      display:inline-block;
-    }
+    <!-- Couleurs, police, style -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #1a1a1a, #3a3a3a);
+            color: white;
+        }
 
-    /* SECTIONS */
-    .section { padding:60px 40px; max-width:1100px; margin:0 auto; }
-    .section h2 { margin-bottom:15px; font-size:28px; }
-    .section-subtitle { color:#666; margin-bottom:25px; }
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            align-items: center;
+        }
 
-    /* DIRECTRICE */
-    .directrice-box {
-      display:flex; align-items:center; gap:30px; flex-wrap:wrap;
-      margin-top:25px;
-    }
-    .directrice-box img {
-      width:260px; border-radius:12px;
-      box-shadow:0 4px 12px rgba(0,0,0,0.15);
-      object-fit:cover; height:320px;
-    }
-    .directrice-box p { font-size:18px; line-height:1.6; }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-    /* CARDS GENERIQUES */
-    .cards {
-      display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:20px; margin-top:20px;
-    }
-    .card {
-      background:#fff; border-radius:6px; padding:20px;
-      box-shadow:0 2px 6px rgba(0,0,0,0.08);
-    }
-    .card img { width:100%; border-radius:6px; margin-bottom:10px; }
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+        }
 
-    /* VALEURS AVEC ICONES */
-    .values-grid {
-      display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-      gap:20px; margin-top:20px;
-    }
-    .value-card {
-      background:#fff; border-radius:6px; padding:18px;
-      box-shadow:0 2px 6px rgba(0,0,0,0.06);
-      text-align:center;
-    }
-    .value-card img { width:50px; margin-bottom:10px; }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: bold;
+        }
 
-    /* GALERIE */
-    .gallery {
-      display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:15px; margin-top:20px;
-    }
-    .gallery img {
-      width:100%; border-radius:8px;
-      height:200px; object-fit:cover;
-      transition:transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .gallery img:hover {
-      transform:scale(1.03);
-      box-shadow:0 4px 12px rgba(0,0,0,0.2);
-    }
+        .buttons {
+            margin-top: 30px;
+        }
 
-    /* FORMULAIRE CONTACT */
-    form p { margin-bottom:15px; }
-    form label { font-weight:bold; font-size:14px; }
-    form input, form textarea {
-      width:100%; padding:8px; margin-top:4px;
-      border-radius:4px; border:1px solid #ccc; box-sizing:border-box;
-      font-family:inherit;
-    }
-    form textarea { min-height:100px; }
+        .btn {
+            padding: 12px 25px;
+            margin: 10px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
 
-    /* FOOTER PREMIUM */
-    footer {
-      background:var(--bleu-nuit); color:#ccc;
-      padding:30px 40px; font-size:13px; margin-top:40px;
-    }
-    .footer-inner {
-      max-width:1100px; margin:0 auto;
-      display:grid; grid-template-columns:2fr 1fr 1fr;
-      gap:20px;
-    }
-    .footer-logo img { height:50px; margin-bottom:10px; }
-    .footer-title { color:#fff; font-weight:bold; margin-bottom:8px; }
-    .footer a { color:var(--or); text-decoration:none; font-size:13px; }
-    .footer-bottom { text-align:center; margin-top:20px; font-size:12px; color:#888; }
+        .btn-yellow {
+            background-color: #f1c40f;
+            color: black;
+        }
 
-    @media (max-width:800px) {
-      .hero-content { padding:100px 20px 30px; }
-      header { padding:10px 20px; }
-      .footer-inner { grid-template-columns:1fr; }
-    }
-  </style>
+        .btn-white {
+            background-color: white;
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <img src="images/logo.png" alt="DM IMMOBILIER">
+<header>
+    <img src="logo.png" alt="Logo DM IMMOBILIER" width="150">
     <nav>
-      <a href="#accueil">Accueil</a>
-      <a href="#apropos">À propos</a>
-      <a href="#directrice">Direction</a>
-      <a href="#biens">Nos biens</a>
-      <a href="#projets">Projets</a>
-      <a href="#contact">Contact</a>
+        <a href="#">Accueil</a>
+        <a href="#">À propos</a>
+        <a href="#">Direction</a>
+        <a href="#">Nos biens</a>
+        <a href="#">Projets</a>
+        <a href="#">Contact</a>
     </nav>
-  </header>
+</header>
 
-  <!-- HERO PREMIUM -->
-  <section id="accueil" class="hero-wrapper">
-    <div class="hero-bg"></div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1>Des logements pour chaque famille, chaque rêve, chaque budget.</h1>
-      <p>DM IMMOBILIER transforme les villages et contrées reculées en villes paradisiaques grâce à des mini‑cités écologiques, modernes et accessibles.</p>
+<section class="hero">
+    <h1>Des logements pour chaque famille, chaque rêve, chaque budget.</h1>
+    <p>DM IMMOBILIER transforme les villages et contrées reculées en villes paradisiaques grâce à des mini-cités écologiques, modernes et accessibles.</p>
 
-      <div class="hero-badges">
-        <div class="hero-badge">Mini‑cités écologiques</div>
-        <div class="hero-badge">Présence CI / FR</div>
-        <div class="hero-badge">Accessibilité & Prestige</div>
-      </div>
-
-      <a href="#biens" class="btn-gold">Voir nos biens</a>
-      <a href="#contact" class="btn-outline">Nous contacter</a>
+    <div class="buttons">
+        <button class="btn btn-white">Mini-cités écologiques</button>
+        <button class="btn btn-white">Présence CI / FR</button>
+        <button class="btn btn-white">Accessibilité & Prestige</button>
     </div>
-  </section>
 
-  <!-- A PROPOS -->
-  <section id="apropos" class="section">
-    <h2>À propos de DM IMMOBILIER</h2>
-    <p class="section-subtitle">
-      DM IMMOBILIER se spécialise dans la construction de mini‑cités écologiques et la transformation des villages en villes modernes, organisées et durables.
-    </p>
-
-    <div class="values-grid">
-      <div class="value-card">
-        <img src="images/icone-eco.png" alt="Écologie">
-        <h4>Écologie</h4>
-        <p>Des projets pensés pour le climat africain, avec des espaces verts et une gestion durable.</p>
-      </div>
-      <div class="value-card">
-        <img src="images/icone-prestige.png" alt="Prestige">
-        <h4>Prestige accessible</h4>
-        <p>Un immobilier élégant, moderne et accessible à différentes catégories de revenus.</p>
-      </div>
-      <div class="value-card">
-        <img src="images/icone-securite.png" alt="Sécurité">
-        <h4>Sécurité & sérénité</h4>
-        <p>Des espaces sécurisés, organisés, pensés pour les familles et les investisseurs.</p>
-      </div>
+    <div class="buttons">
+        <button class="btn btn-yellow">Voir nos biens</button>
+        <button class="btn btn-white">Nous contacter</button>
     </div>
-  </section>
-
-  <!-- DIRECTRICE GENERALE -->
-  <section id="directrice" class="section">
-    <h2>Direction Générale</h2>
-    <p class="section-subtitle">Une vision portée par une femme engagée, entre la Côte d’Ivoire et la France.</p>
-
-    <div class="directrice-box">
-      <img src="images/mariama.jpg" alt="Doumbia Mariama">
-      <p>
-        <strong>Doumbia Mariama</strong>, fondatrice et Directrice Générale de DM IMMOBILIER, incarne une vision moderne, inclusive et écologique de l’immobilier africain.  
-        Entre la Côte d’Ivoire et la France, elle accompagne chaque famille, chaque investisseur et chaque projet avec rigueur, transparence et élégance.  
-        Sa mission : rendre l’immobilier structuré, sécurisé et prestigieux, tout en restant accessible et humain.
-      </p>
-    </div>
-  </section>
-
-  <!-- NOS BIENS -->
-  <section id="biens" class="section">
-    <h2>Nos biens</h2>
-    <p class="section-subtitle">Des solutions adaptées à chaque projet : familles, investisseurs, diaspora.</p>
-
-    <div class="cards">
-      <div class="card">
-        <img src="images/villa1.jpg" alt="Villas modernes">
-        <h4>Villas modernes</h4>
-        <p>Des résidences élégantes, sécurisées et adaptées aux familles africaines, avec des finitions soignées.</p>
-      </div>
-
-      <div class="card">
-        <img src="images/villa2.jpg" alt="Mini-cités écologiques">
-        <h4>Mini‑cités écologiques</h4>
-        <p>Des quartiers organisés, verts et durables, avec des espaces communs et des services de proximité.</p>
-      </div>
-
-      <div class="card">
-        <img src="images/villa3.jpg" alt="Terrains viabilisés">
-        <h4>Terrains viabilisés</h4>
-        <p>Des terrains prêts à construire, bien situés, avec une vision d’aménagement à long terme.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJETS / GALERIE -->
-  <section id="projets" class="section">
-    <h2>Nos projets & réalisations</h2>
-    <p class="section-subtitle">Une vision territoriale : transformer, structurer, embellir.</p>
-
-    <div class="gallery">
-      <img src="images/villa1.jpg" alt="Projet 1">
-      <img src="images/villa2.jpg" alt="Projet 2">
-      <img src="images/villa3.jpg" alt="Projet 3">
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p class="section-subtitle">Parlons de votre projet immobilier, en Côte d’Ivoire ou depuis la diaspora.</p>
-
-    <div class="cards">
-      <div class="card">
-        <h4>Coordonnées</h4>
-        <p><strong>Email :</strong> contact@dmimmobilier.com</p>
-        <p><strong>Téléphone CI :</strong> +225 XX XX XX XX</p>
-        <p><strong>Téléphone FR :</strong> +33 X XX XX XX XX</p>
-      </div>
-
-      <div class="card">
-        <h4>Formulaire de contact</h4>
-        <form>
-          <p>
-            <label>Nom complet</label>
-            <input type="text" name="nom">
-          </p>
-          <p>
-            <label>Email</label>
-            <input type="email" name="email">
-          </p>
-          <p>
-            <label>Téléphone</label>
-            <input type="text" name="telephone">
-          </p>
-          <p>
-            <label>Message</label>
-            <textarea name="message"></textarea>
-          </p>
-          <p>
-            <button type="submit" style="background:var(--or);border:none;padding:10px 20px;border-radius:4px;font-weight:bold;cursor:pointer;">
-              Envoyer
-            </button>
-          </p>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER PREMIUM -->
-  <footer>
-    <div class="footer-inner footer">
-      <div class="footer-logo">
-        <img src="images/logo.png" alt="DM IMMOBILIER">
-        <p>L’immobilier structuré, écologique et accessible, entre la Côte d’Ivoire et la France.</p>
-      </div>
-      <div>
-        <div class="footer-title">Contacts</div>
-        <p>Email : <a href="mailto:contact@dmimmobilier.com">contact@dmimmobilier.com</a></p>
-        <p>CI : +225 XX XX XX XX</p>
-        <p>FR : +33 X XX XX XX XX</p>
-      </div>
-      <div>
-        <div class="footer-title">Réseaux & mentions</div>
-        <p><a href="#">LinkedIn</a> • <a href="#">Facebook</a></p>
-        <p><a href="#">Mentions légales</a></p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      © 2026 DM IMMOBILIER — Tous droits réservés.
-    </div>
-  </footer>
+</section>
 
 </body>
 </html>
