@@ -4,36 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- 🔥 TITRE SEO -->
-    <title>DM IMMOBILIER – Mini-cités écologiques et logements modernes en Côte d’Ivoire & France</title>
+    <title>DM IMMOBILIER – Mini-cités écologiques & logements modernes</title>
 
-    <!-- 🔥 DESCRIPTION GOOGLE -->
     <meta name="description" content="DM IMMOBILIER conçoit des mini-cités écologiques, modernes et accessibles en Côte d’Ivoire et en France. Logements pour familles, jeunes actifs et investisseurs. Qualité, sécurité et innovation.">
 
-    <!-- 🔑 MOTS-CLÉS (optionnel mais utile) -->
-    <meta name="keywords" content="immobilier, Côte d’Ivoire, mini-cités, logements modernes, DM IMMOBILIER, écoquartiers, construction, Abidjan, France, maisons, villas, projets immobiliers">
-
-    <!-- Couleurs, police, style -->
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom right, #1a1a1a, #3a3a3a);
-            color: white;
+            background: linear-gradient(135deg, #f7e9c4, #e0c27b);
+            color: #2c2c2c;
         }
 
         header {
             display: flex;
             justify-content: space-between;
-            padding: 20px;
             align-items: center;
+            padding: 20px 40px;
         }
 
         nav a {
             margin: 0 15px;
-            color: white;
+            color: #2c2c2c;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #3a7f5a;
         }
 
         .hero {
@@ -42,8 +41,16 @@
         }
 
         .hero h1 {
-            font-size: 32px;
+            font-size: 34px;
             font-weight: bold;
+            color: #2c2c2c;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 20px auto;
+            color: #333;
         }
 
         .buttons {
@@ -51,22 +58,40 @@
         }
 
         .btn {
-            padding: 12px 25px;
+            padding: 14px 28px;
             margin: 10px;
-            border-radius: 8px;
+            border-radius: 30px;
             border: none;
             cursor: pointer;
             font-size: 16px;
+            transition: 0.3s;
         }
 
-        .btn-yellow {
-            background-color: #f1c40f;
-            color: black;
+        .btn-gold {
+            background-color: #f4d27a;
+            color: #2c2c2c;
+        }
+
+        .btn-gold:hover {
+            background-color: #ffe9a8;
+        }
+
+        .btn-green {
+            background-color: #a8e6b1;
+            color: #2c2c2c;
+        }
+
+        .btn-green:hover {
+            background-color: #c4f3cb;
         }
 
         .btn-white {
             background-color: white;
-            color: black;
+            color: #2c2c2c;
+        }
+
+        .btn-white:hover {
+            background-color: #f0f0f0;
         }
     </style>
 </head>
@@ -75,18 +100,20 @@
 
 <header>
     <img src="logo.png" alt="Logo DM IMMOBILIER" width="150">
+
     <nav>
-        <a href="#">Accueil</a>
-        <a href="#">À propos</a>
-        <a href="#">Direction</a>
-        <a href="#">Nos biens</a>
-        <a href="#">Projets</a>
-        <a href="#">Contact</a>
+        <a href="index.html">Accueil</a>
+        <a href="apropos.html">À propos</a>
+        <a href="direction.html">Direction</a>
+        <a href="biens.html">Nos biens</a>
+        <a href="projets.html">Projets</a>
+        <a href="contact.html">Contact</a>
     </nav>
 </header>
 
 <section class="hero">
     <h1>Des logements pour chaque famille, chaque rêve, chaque budget.</h1>
+
     <p>DM IMMOBILIER transforme les villages et contrées reculées en villes paradisiaques grâce à des mini-cités écologiques, modernes et accessibles.</p>
 
     <div class="buttons">
@@ -96,8 +123,8 @@
     </div>
 
     <div class="buttons">
-        <button class="btn btn-yellow">Voir nos biens</button>
-        <button class="btn btn-white">Nous contacter</button>
+        <button class="btn btn-gold">Voir nos biens</button>
+        <button class="btn btn-green">Nous contacter</button>
     </div>
 </section>
 
