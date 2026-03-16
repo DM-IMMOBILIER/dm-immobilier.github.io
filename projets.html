@@ -1,1 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets – DM IMMOBILIER</title>
+
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f7e9c4, #e0c27b);
+            color: #2c2c2c;
+        }
+
+        header{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 20px 40px;
+        }
+
+        .logo{
+            width: 260px;
+            filter: drop-shadow(0px 0px 6px rgba(0,0,0,0.25));
+        }
+
+        nav{
+            margin-left: 40px;
+        }
+
+        nav a{
+            margin: 0 15px;
+            color: #2c2c2c;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 10px 12px;
+        }
+
+        nav a:hover{
+            color: #3a7f5a;
+        }
+
+        .container{
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+            background: rgba(255,255,255,0.7);
+            border-radius: 15px;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        h2{
+            font-size: 26px;
+            margin-top: 40px;
+            color: #2c2c2c;
+            border-left: 6px solid #f4d27a;
+            padding-left: 10px;
+        }
+
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .card{
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            border: 3px solid #f4d27a;
+            box-shadow: 0px 0px 6px rgba(0,0,0,0.15);
+        }
+
+        .card img{
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        .card h3{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .card p{
+            font-size: 16px;
+            color: #444;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.png" alt="Logo DM IMMOBILIER" class="logo">
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="apropos.html">À propos</a>
+        <a href="direction.html">Direction</a>
+        <a href="biens.html">Nos biens</a>
+        <a href="projets.html">Projets</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Nos projets immobiliers</h1>
+
+    <!-- PROJETS DÉJÀ FINANCÉS -->
+    <h2>Projets dont les terrains sont déjà payés</h2>
+
+    <div class="grid">
+
+        <!-- MOTOBE -->
+        <div class="card">
+            <img src="motobe.jpg" alt="Projet Motobé">
+            <h3>Presqu'île de Motobé – Bassam</h3>
+            <p>
+                Projet phare de DM IMMOBILIER, situé sur une presqu’île exceptionnelle de 
+                <strong>3000 m²</strong>, entièrement bordée par le <strong>fleuve Comoé</strong>.
+                Ce site unique offre un potentiel rare pour la création d’une mini-cité balnéaire moderne.
+            </p>
+        </div>
+
+        <!-- OUGUEDOUME -->
+        <div class="card">
+            <img src="ouguedoume.jpg" alt="Projet Ouguedoumé">
+            <h3>Extension Ouguedoumé – Cocody Angré 13e tranche</h3>
+            <p>
+                Projet premium situé <strong>au bord de la lagune Ébrié</strong>, avec plage privée,
+                détente et activités nautiques.
+            </p>
+        </div>
+
+        <!-- MEMNI -->
+        <div class="card">
+            <img src="memni.jpg" alt="Projet MEMNI">
+            <h3>Projet MEMNI – Route d'Alépé</h3>
+            <p>
+                Terrain stratégique dans une zone calme, idéal pour un projet résidentiel moderne.
+            </p>
+        </div>
+
+        <!-- CITE LA ROCHELLE -->
+        <div class="card">
+            <img src="citebouake.jpg" alt="Cité La Rochelle Bouaké">
+            <h3>Cité La Rochelle – Bouaké</h3>
+            <p>
+                Projet situé dans une zone en pleine croissance, idéal pour une mini-cité moderne.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- PROJETS EN ÉTUDE -->
+    <h2>Projets en phase d’étude</h2>
+
+    <div class="grid">
+
+        <!-- MARABADJASSA -->
+        <div class="card">
+            <img src="marabadjassa.jpg" alt="Projet Marabadjassa">
+            <h3>Village de Marabadjassa</h3>
+            <p>
+                Village de 2 970 habitants, situé à 74 km de Bouaké.
+            </p>
+        </div>
+
+        <!-- KOTOBO -->
+        <div class="card">
+            <img src="kotobo.jpg" alt="Projet Kotobo">
+            <h3>Village de Kotobo</h3>
+            <p>
+                Village de 1 860 habitants, situé dans le District des Lacs.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
 
