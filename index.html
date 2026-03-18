@@ -9,25 +9,21 @@
     <meta name="description" content="DM IMMOBILIER conçoit des mini-cités écologiques, modernes et accessibles en Côte d’Ivoire et en France. Logements pour familles, jeunes actifs et investisseurs. Qualité, sécurité et innovation.">
 
     <style>
-    /* --- FOND ANIMÉ PLEINE PAGE --- */
-        * {
-    background: transparent !important;
-}
-
+/* --- FOND ANIMÉ PLEINE PAGE --- */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     height: 100vh;
-    overflow-x: hidden;
+    overflow: hidden;
     background-size: cover;
     background-position: center;
     animation: slider 28s infinite ease-in-out;
     position: relative;
-    color: white; /* texte lisible */
+    color: white;
 }
 
-/* --- VOILE SOMBRE POUR LISIBILITÉ --- */
+/* --- VOILE SOMBRE --- */
 body::before {
     content: "";
     position: fixed;
@@ -48,7 +44,12 @@ body::before {
     100% { background-image: url('motobe.jpg'); }
 }
 
-/* --- MENU DORÉ LISIBLE --- */
+/* --- TOUT RENDRE TRANSPARENT --- */
+header, nav, section, .hero, .container, .intro, .accueil {
+    background: transparent !important;
+}
+
+/* --- MENU DORÉ --- */
 nav a {
     margin: 0 15px;
     color: #f4d27a !important;
@@ -60,11 +61,6 @@ nav a {
 
 nav a:hover {
     color: white !important;
-}
-
-/* --- SECTIONS TRANSPARENTES --- */
-section, .hero, .container, .intro, .accueil {
-    background: transparent !important;
 }
 
 /* --- HERO --- */
@@ -106,24 +102,16 @@ section, .hero, .container, .intro, .accueil {
     color: #2c2c2c;
 }
 
-.btn-gold:hover {
-    background-color: #ffe9a8;
-}
-
 .btn-green {
     background-color: #a8e6b1;
     color: #2c2c2c;
-}
-
-.btn-green:hover {
-    background-color: #c4f3cb;
 }
 
 .btn-white {
     background-color: white;
     color: #2c2c2c;
 }
-
+    
 .btn-white:hover {
     background-color: #f0f0f0;
 }
