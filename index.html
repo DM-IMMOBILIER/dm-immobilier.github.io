@@ -25,6 +25,8 @@ body {
 
 /* --- VOILE SOMBRE --- */
 body::before {
+    z-index: -1; /* entre le fond animé et le contenu */
+}
     content: "";
     position: fixed;
     top: 0;
