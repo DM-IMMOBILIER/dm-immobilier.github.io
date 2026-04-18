@@ -16,10 +16,14 @@ body {
 /* --- HEADER --- */
 header {
     width: 100%;
-    padding: 10px 20px;
+    padding: 10px 20px; /* réduit pour remonter le contenu */
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+header img {
+    width: 160px; /* réduit pour éviter de pousser le contenu vers le bas */
 }
 
 nav a {
@@ -35,32 +39,33 @@ nav a.active {
     color: gold;
 }
 
-/* --- HERO SECTION (Accueil) --- */
+/* --- HERO SECTION --- */
 .hero {
     text-align: center;
-    padding: 30px 20px;
+    padding: 30px 20px; /* réduit pour remonter le texte */
+    margin-top: 10px; /* remonte encore un peu */
 }
 
 .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-bottom: 15px;
     color: gold;
 }
 
 .hero p {
     max-width: 700px;
     margin: auto;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 /* --- BUTTONS --- */
 .buttons {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .btn {
-    padding: 12px 25px;
-    margin: 10px;
+    padding: 10px 20px;
+    margin: 8px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
@@ -95,10 +100,10 @@ nav a.active {
     background: #27ae60;
 }
 
-/* --- PAGE CONTENT (À propos, Direction, etc.) --- */
+/* --- PAGE CONTENT --- */
 .page-content {
     max-width: 900px;
-    margin: 50px auto;
+    margin: 30px auto; /* réduit pour remonter */
     padding: 20px;
 }
 
@@ -108,7 +113,7 @@ nav a.active {
 }
 
 .page-content h2 {
-    margin-top: 30px;
+    margin-top: 25px;
     color: #2ecc71;
 }
 
@@ -121,11 +126,35 @@ nav a.active {
     margin-bottom: 8px;
 }
 
-/* --- FOOTER (si tu veux en ajouter un plus tard) --- */
-footer {
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-    color: #aaa;
+/* --- ANIMATIONS --- */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
 }
 
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideUp 1.2s ease forwards;
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn:hover {
+    transform: scale(1.08);
+}
+
+/* --- SUPPRESSION DES ESPACES VIDES --- */
+.background {
+    height: 0; /* empêche la zone vide en haut */
+}
