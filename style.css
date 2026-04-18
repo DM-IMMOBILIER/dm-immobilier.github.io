@@ -1,1 +1,131 @@
+/* --- RESET GLOBAL --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* --- BACKGROUND GLOBAL --- */
+body {
+    background: #111;
+    color: white;
+    line-height: 1.6;
+}
+
+/* --- HEADER --- */
+header {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: gold;
+}
+
+/* --- HERO SECTION (Accueil) --- */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: gold;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+/* --- BUTTONS --- */
+.buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-white {
+    background: white;
+    color: black;
+}
+
+.btn-white:hover {
+    background: #ddd;
+}
+
+.btn-gold {
+    background: gold;
+    color: black;
+}
+
+.btn-gold:hover {
+    background: #e6c200;
+}
+
+.btn-green {
+    background: #2ecc71;
+    color: white;
+}
+
+.btn-green:hover {
+    background: #27ae60;
+}
+
+/* --- PAGE CONTENT (À propos, Direction, etc.) --- */
+.page-content {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.page-content h1 {
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.page-content h2 {
+    margin-top: 30px;
+    color: #2ecc71;
+}
+
+.page-content ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.page-content li {
+    margin-bottom: 8px;
+}
+
+/* --- FOOTER (si tu veux en ajouter un plus tard) --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    color: #aaa;
+}
 
