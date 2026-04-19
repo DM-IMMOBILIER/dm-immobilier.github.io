@@ -6,10 +6,10 @@
     font-family: Arial, sans-serif;
 }
 
-/* --- BACKGROUND GLOBAL --- */
+/* --- BACKGROUND GLOBAL (BLEU SATINÉ) --- */
 body {
-    background: linear-gradient(to bottom, #d4af37, #f7e9a0);
-    color: black;
+    background: linear-gradient(135deg, #0a3d62 0%, #06466f 40%, #052c47 100%);
+    color: white;
     line-height: 1.6;
 }
 
@@ -21,14 +21,14 @@ body {
 /* --- HEADER --- */
 header {
     width: 100%;
-    padding: 10px 20px; /* réduit pour remonter le contenu */
+    padding: 5px 20px; /* compact pour remonter le contenu */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 header img {
-    width: 160px; /* réduit pour éviter de pousser le contenu vers le bas */
+    width: 120px; /* taille réduite pour éviter de pousser le contenu */
 }
 
 nav a {
@@ -47,8 +47,8 @@ nav a.active {
 /* --- HERO SECTION --- */
 .hero {
     text-align: center;
-    padding: 30px 20px; /* réduit pour remonter le texte */
-    margin-top: 10px; /* remonte encore un peu */
+    padding: 20px 20px; /* réduit pour remonter */
+    margin-top: 0;
 }
 
 .hero h1 {
@@ -108,7 +108,7 @@ nav a.active {
 /* --- PAGE CONTENT --- */
 .page-content {
     max-width: 900px;
-    margin: 30px auto; /* réduit pour remonter */
+    margin: 20px auto; /* remonte encore */
     padding: 20px;
 }
 
@@ -157,9 +157,4 @@ nav a.active {
 
 .btn:hover {
     transform: scale(1.08);
-}
-
-/* --- SUPPRESSION DES ESPACES VIDES --- */
-.background {
-    height: 0; /* empêche la zone vide en haut */
 }
