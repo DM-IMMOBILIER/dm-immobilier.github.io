@@ -21,10 +21,42 @@ body {
 /* --- HEADER --- */
 header {
     width: 100%;
-    padding: 5px 20px; /* compact pour remonter le contenu */
+    padding: 5px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* Bloc gauche : logo DM + menu en dessous */
+.header-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Logo DM-IMMOBILIER */
+.logo-immobilier {
+    width: 185px;
+    margin-bottom: 5px;
+}
+
+/* Menu sous le logo DM */
+.menu-bas a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu-bas a:hover,
+.menu-bas a.active {
+    color: gold;
+}
+
+/* Logo GEA à droite */
+.logo-gea {
+    width: 160px;
 }
 
 header img {
