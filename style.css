@@ -56,7 +56,8 @@ header {
 
 /* Logo GEA à droite */
 .logo-gea {
-    width: 160px;
+    width: 220px;
+    margin-left: 20px;
 }
 
 header img {
