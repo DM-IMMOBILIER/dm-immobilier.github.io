@@ -20,12 +20,13 @@ body {
 
 /* --- HEADER --- */
 header {
-    width: 100%;
-    padding: 5px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 40px;
+    background: #0a1a3b;
 }
+
 
 /* Bloc gauche : logo DM + menu en dessous */
 .header-left {
