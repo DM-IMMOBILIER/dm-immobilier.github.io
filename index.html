@@ -18,16 +18,27 @@
     <meta property="og:url" content="https://dm-immobilier.github.io/">
     <meta property="og:type" content="website">
 
-<style>
-    .logo-dm {
-        width: 180px !important;
-        height: auto;
+    <style>
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
     }
 
+    /* DM reste à gauche, taille normale */
+    .logo-dm {
+        height: 80px;
+        width: auto;
+    }
+
+    /* GEA au MILIEU, plus lisible */
     .logo-gea {
-        width: 190px !important;
-        margin-left: 10px;
-        margin-right: 10px;
+        height: 110px;
+        width: auto;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
 </style>
 
