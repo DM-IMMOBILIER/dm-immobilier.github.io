@@ -25,15 +25,6 @@ body {
     height: auto;
 }
 
-/* Logo GEA */
-.logo-gea {
-    width: 190px;
-    height: auto;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
     
 /* Bloc gauche : logo DM + menu en dessous */
 .header-left {
