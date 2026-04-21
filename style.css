@@ -16,7 +16,16 @@ body {
 /* --- SUPPRESSION ESPACE VIDE --- */
 .background {
     height: 0;
-    
+}
+
+/* --- HEADER --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #0a1a3b;
+    position: relative;
 }
 
 /* Logo DM */
@@ -25,21 +34,29 @@ body {
     height: auto;
 }
 
-    
-/* Bloc gauche : logo DM + menu en dessous */
+/* Logo GEA centré */
+.logo-gea {
+    width: 190px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Bloc gauche : DM + menu bas */
 .header-left {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-/* Logo DM-IMMOBILIER */
+/* Logo DM-IMMOBILIER (si utilisé) */
 .logo-immobilier {
     width: 185px;
     margin-bottom: 5px;
 }
 
-/* Menu sous le logo DM */
+/* Menu sous DM */
 .menu-bas a {
     color: white;
     margin-right: 15px;
@@ -53,24 +70,7 @@ body {
     color: gold;
 }
 
-/* --- LOGOS --- */
-
-/* DM reste à gauche, taille normale */
-.logo-dm, .logo-immobilier {
-    width: 160px;
-    height: auto;
-}
-
-/* GEA au centre, plus lisible */
-.logo-gea {
-    width: 200px;
-    height: auto;
-}
-
-header img {
-    width: 170px;/* taille réduite pour éviter de pousser le contenu */
-}
-
+/* --- NAVIGATION --- */
 nav a {
     color: white;
     margin-left: 20px;
@@ -87,7 +87,7 @@ nav a.active {
 /* --- HERO SECTION --- */
 .hero {
     text-align: center;
-    padding: 20px 20px; /* réduit pour remonter */
+    padding: 20px 20px;
     margin-top: 0;
 }
 
@@ -116,6 +116,10 @@ nav a.active {
     cursor: pointer;
     font-weight: bold;
     transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.08);
 }
 
 .btn-white {
@@ -148,7 +152,7 @@ nav a.active {
 /* --- PAGE CONTENT --- */
 .page-content {
     max-width: 900px;
-    margin: 20px auto; /* remonte encore */
+    margin: 20px auto;
     padding: 20px;
 }
 
@@ -193,34 +197,4 @@ nav a.active {
         opacity: 1;
         transform: translateY(0);
     }
-
-    
-.btn:hover {
-    transform: scale(1.08);
 }
-
-/* --- HEADER --- */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px; 
-    background: #0a1a3b;
-}
-
-/* Logo DM */
-.logo-dm {
-    width: 170px;
-    height: auto;
-}
-
-/* Logo GEA */
-.logo-gea {
-    width: 190px;
-    height: auto;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-
