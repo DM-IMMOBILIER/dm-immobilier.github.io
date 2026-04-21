@@ -210,13 +210,15 @@ header {
     background: #0a1a3b;
     
 .logo-dm {
-    width: 160px;
+    width: 170px;
     height: auto;
-    justify-self: start;
 }
 
 .logo-gea {
-    width: 200px;
+    width: 190px;
     height: auto;
-    justify-self: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
