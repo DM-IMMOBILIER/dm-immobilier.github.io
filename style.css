@@ -84,7 +84,6 @@ header {
     height: auto;
 }
 
-
 header img {
     width: 170px;/* taille réduite pour éviter de pousser le contenu */
 }
@@ -211,8 +210,8 @@ nav a.active {
         opacity: 1;
         transform: translateY(0);
     }
-}
 
+    
 .btn:hover {
     transform: scale(1.08);
 }
