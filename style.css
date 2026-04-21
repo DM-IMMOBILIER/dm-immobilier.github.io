@@ -54,11 +54,20 @@ header {
     color: gold;
 }
 
-/* Logo GEA à droite */
-.logo-gea {
-    width: 230px;
-    margin-left: 20px;
+/* --- LOGOS --- */
+
+/* DM reste à gauche, taille normale */
+.logo-dm, .logo-immobilier {
+    width: 160px;
+    height: auto;
 }
+
+/* GEA au centre, plus lisible */
+.logo-gea {
+    width: 200px;
+    height: auto;
+}
+
 
 header img {
     width: 170px;/* taille réduite pour éviter de pousser le contenu */
