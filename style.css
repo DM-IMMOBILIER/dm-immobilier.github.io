@@ -198,3 +198,19 @@ nav a.active {
         transform: translateY(0);
     }
 }
+.logo-gea {
+    width: 300px;   /* Ajuste ici si tu veux plus ou moins large */
+    height: auto;
+    animation: reveal 1.2s ease-out;
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
