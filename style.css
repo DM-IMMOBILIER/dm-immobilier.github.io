@@ -218,3 +218,47 @@ nav a.active {
     width: 400px;   /* Longueur horizontale */
     height: auto;   /* Pas de déformation */
 }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* espace entre les deux logos */
+}
+
+.logo-dm {
+    width: 150px;
+    height: auto;
+}
+
+.logo-gea {
+    width: 400px;
+    height: auto;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* espace entre les deux logos */
+}
+
+.logo-dm {
+    width: 150px;
+    height: auto;
+}
+
+.logo-gea {
+    width: 400px;
+    height: auto;
+}
