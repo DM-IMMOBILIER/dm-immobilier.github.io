@@ -11,11 +11,8 @@ body {
     background: linear-gradient(135deg, #0a3d62 0%, #06466f 40%, #052c47 100%);
     color: white;
     line-height: 1.6;
-}
-
-/* --- SUPPRESSION ESPACE VIDE --- */
-.background {
-    height: 0;
+    max-width: 1200px;      /* Empêche le site d’être géant */
+    margin: 0 auto;         /* Centre le site */
 }
 
 /* --- HEADER --- */
@@ -25,49 +22,31 @@ header {
     align-items: center;
     padding: 15px 40px;
     background: #0a1a3b;
-    position: relative;
+}
+
+/* Bloc logos */
+.logos {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 /* Logo DM */
 .logo-dm {
-    width: 170px;
+    width: 120px;   /* Taille PRO */
     height: auto;
 }
 
-/* Logo GEA centré */
+/* Logo GEA */
 .logo-gea {
-    width: 190px;
+    width: 180px;   /* Taille PRO (au lieu de 400px !) */
     height: auto;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    animation: reveal 1.2s ease-out;
 }
 
-/* Bloc gauche : DM + menu bas */
-.header-left {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-/* Logo DM-IMMOBILIER (si utilisé) */
-.logo-immobilier {
-    width: 185px;
-    margin-bottom: 5px;
-}
-
-/* Menu sous DM */
-.menu-bas a {
-    color: white;
-    margin-right: 15px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.menu-bas a:hover,
-.menu-bas a.active {
-    color: gold;
+@keyframes reveal {
+    0% { opacity: 0; transform: scale(0.85); }
+    100% { opacity: 1; transform: scale(1); }
 }
 
 /* --- NAVIGATION --- */
@@ -77,6 +56,7 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
+    font-size: 0.95rem; /* Réduction pour éviter l’effet géant */
 }
 
 nav a:hover,
@@ -87,12 +67,11 @@ nav a.active {
 /* --- HERO SECTION --- */
 .hero {
     text-align: center;
-    padding: 20px 20px;
-    margin-top: 0;
+    padding: 40px 20px;
 }
 
 .hero h1 {
-    font-size: 2rem;
+    font-size: 1.8rem; /* Avant : 2rem → trop grand */
     margin-bottom: 15px;
     color: gold;
 }
@@ -100,14 +79,10 @@ nav a.active {
 .hero p {
     max-width: 700px;
     margin: auto;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 /* --- BUTTONS --- */
-.buttons {
-    margin-top: 20px;
-}
-
 .btn {
     padding: 10px 20px;
     margin: 8px;
@@ -116,37 +91,11 @@ nav a.active {
     cursor: pointer;
     font-weight: bold;
     transition: 0.3s;
+    font-size: 0.95rem;
 }
 
 .btn:hover {
-    transform: scale(1.08);
-}
-
-.btn-white {
-    background: white;
-    color: black;
-}
-
-.btn-white:hover {
-    background: #ddd;
-}
-
-.btn-gold {
-    background: gold;
-    color: black;
-}
-
-.btn-gold:hover {
-    background: #e6c200;
-}
-
-.btn-green {
-    background: #2ecc71;
-    color: white;
-}
-
-.btn-green:hover {
-    background: #27ae60;
+    transform: scale(1.05);
 }
 
 /* --- PAGE CONTENT --- */
@@ -159,20 +108,19 @@ nav a.active {
 .page-content h1 {
     color: gold;
     margin-bottom: 20px;
+    font-size: 1.6rem;
 }
 
 .page-content h2 {
     margin-top: 25px;
     color: #2ecc71;
+    font-size: 1.3rem;
 }
 
-.page-content ul {
-    margin-left: 20px;
-    margin-top: 10px;
-}
-
-.page-content li {
-    margin-bottom: 8px;
+/* --- IMAGES --- */
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* --- ANIMATIONS --- */
@@ -197,68 +145,4 @@ nav a.active {
         opacity: 1;
         transform: translateY(0);
     }
-}
-.logo-gea {
-    width: 300px;   /* Ajuste ici si tu veux plus ou moins large */
-    height: auto;
-    animation: reveal 1.2s ease-out;
-}
-
-@keyframes reveal {
-    0% {
-        opacity: 0;
-        transform: scale(0.85);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-.logo-gea {
-    width: 400px;   /* Longueur horizontale */
-    height: auto;   /* Pas de déformation */
-}
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-}
-
-.logos {
-    display: flex;
-    align-items: center;
-    gap: 20px; /* espace entre les deux logos */
-}
-
-.logo-dm {
-    width: 150px;
-    height: auto;
-}
-
-.logo-gea {
-    width: 400px;
-    height: auto;
-}
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-}
-
-.logos {
-    display: flex;
-    align-items: center;
-    gap: 20px; /* espace entre les deux logos */
-}
-
-.logo-dm {
-    width: 150px;
-    height: auto;
-}
-
-.logo-gea {
-    width: 400px;
-    height: auto;
 }
