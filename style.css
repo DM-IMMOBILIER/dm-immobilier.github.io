@@ -1,4 +1,6 @@
-/* RESET GLOBAL */
+/* -----------------------------------
+   RESET GLOBAL
+----------------------------------- */
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +8,11 @@
     font-family: "Poppins", sans-serif;
 }
 
-body {
-    background-color: #f8f8f8;
-    color: #333;
+/* Empêche les images géantes */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* -----------------------------------
@@ -33,7 +37,6 @@ body {
 .logo-gea {
     width: 380px; /* Taille contrôlée */
     max-width: 90%;
-    height: auto;
     margin: 0 auto;
     animation: geaAppear 1.8s ease-out forwards;
 }
