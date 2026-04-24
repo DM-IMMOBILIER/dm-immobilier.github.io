@@ -5,170 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nos biens – DM IMMOBILIER</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #f7e9c4, #e0c27b);
-            color: #2c2c2c;
-        }
-              .card:hover {
-    transform: scale(1.03);
-    box-shadow: 0px 8px 18px rgba(0,0,0,0.25);
-}
-.card img {
-    transition: 0.3s;
-}
-.card:hover img {
-    transform: scale(1.05);
-}
-
-        /* HEADER */
-        header {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            padding: 20px 40px;
-        }
-
-        .logo {
-            width: 260px;
-            filter: drop-shadow(0px 0px 6px rgba(0,0,0,0.25));
-        }
-
-        nav {
-            margin-left: 40px;
-        }
-
-        nav a {
-            margin: 0 15px;
-            color: #2c2c2c;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 16px;
-            padding: 10px 12px;
-        }
-
-        nav a:hover {
-            color: #3a7f5a;
-        }
-
-        /* CONTENU */
-        .container {
-            max-width: 1100px;
-            margin: 40px auto;
-            padding: 20px;
-            background: rgba(255,255,255,0.7);
-            border-radius: 15px;
-        }
-
-        h1 {
-            text-align: center;
-            font-size: 32px;
-            margin-bottom: 30px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-        }
-
-        .card {
-            background: white;
-            border-radius: 15px;
-            padding: 15px;
-            text-align: center;
-            border: 3px solid #f4d27a;
-            filter: drop-shadow(0px 0px 6px rgba(0,0,0,0.15));
-        }
-
-        .card img {
-            width: 100%;
-            border-radius: 12px;
-        }
-
-        .card h3 {
-            margin-top: 15px;
-            font-size: 20px;
-            color: #2c2c2c;
-        }
-
-        .card p {
-            font-size: 16px;
-            color: #444;
-        }
-    </style>
+    <!-- CSS GLOBAL -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <div class="logos">
-        <img src="logo.png" class="logo-dm" alt="Logo DM IMMOBILIER">
-        <img src="logo-gea.png" class="logo-gea" alt="Logo GEA">
-    </div>
-
-    <nav>
-        <a href="index.html">Accueil</a>
-        <a href="a-propos.html">À propos</a>
-        <a href="direction.html">Direction</a>
-        <a href="biens.html">Nos biens</a>
-        <a href="projets.html">Projets</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
-
-<div class="container">
-    <h1>Nos biens immobiliers</h1>
-
-    <p style="font-size: 18px; text-align: center; margin-bottom: 30px;">
-        DM IMMOBILIER dispose d’un patrimoine immobilier solide comprenant 
-        <strong>12 terrains</strong> stratégiquement situés :
-        <br><br>
-        • <strong>10 terrains à Abidjan et Grand Abidjan</strong><br>
-        • <strong>1 terrain à Bouaké</strong><br>
-        • <strong>1 terrain supplémentaire</strong> (localisation à préciser)
-        <br><br>
-        Ces terrains constituent la base de nos mini-cités modernes, écologiques et accessibles.
-    </p>
-
-    <p style="font-size: 18px; text-align: center; margin-bottom: 30px;">
-        DM IMMOBILIER est également en phase d’expansion.  
-        Un projet d’acquisition de terrains est en cours à 
-        <strong>Kotobo, dans le département de Prikro</strong>, 
-        afin d’y développer une nouvelle mini-cité moderne et écologique.
-        <br><br>
-        Ce futur projet s’inscrit dans notre vision d’étendre nos solutions 
-        d’habitat durable dans plusieurs régions de Côte d’Ivoire.
-    </p>
-
-    <!-- GRILLE CORRIGÉE -->
-    <div class="grid">
-
-        <div class="card">
-            <img src="kotobo.jpg" alt="Villas 4 à 5 pièces – Cité de Kotobo">
-            <h3>Cité de Kotobo</h3>
-            <p>Villas basses et duplex modernes, 4 à 5 pièces, dans un cadre calme et sécurisé.</p>
+    <!-- HEADER GLOBAL -->
+    <header>
+        <div class="logos">
+            <img src="logo.png" class="logo-dm" alt="Logo DM IMMOBILIER">
+            <img src="logo-gea.png" class="logo-gea" alt="Logo GEA">
         </div>
 
-        <div class="card">
-            <img src="memni.jpg" alt="Villas 4 à 5 pièces – Cité de Memni">
-            <h3>Cité de Memni</h3>
-            <p>Mini-cité écologique avec logements familiaux modernes et accessibles.</p>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="a-propos.html">À propos</a>
+            <a href="direction.html">Direction</a>
+            <a href="biens.html" class="active">Nos biens</a>
+            <a href="projets.html">Projets</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- CONTENU -->
+    <section class="page-content fade-in">
+
+        <h1>Nos biens immobiliers</h1>
+
+        <p>
+            DM IMMOBILIER dispose d’un portefeuille solide composé de <strong>12 terrains stratégiquement situés</strong> :
+        </p>
+
+        <ul>
+            <li>10 terrains à Abidjan et Grand Abidjan</li>
+            <li>1 terrain à Bouaké</li>
+            <li>1 terrain supplémentaire (localisation en cours de validation)</li>
+        </ul>
+
+        <p>
+            Ces terrains constituent la base de nos mini-cités modernes, écologiques et accessibles.
+            Nous développons des projets innovants pour offrir des logements adaptés aux familles,
+            aux jeunes actifs et aux investisseurs.
+        </p>
+
+        <h2>Nos mini-cités</h2>
+
+        <div class="mini-cites">
+
+            <div class="card">
+                <h3>Cité de Kotobo</h3>
+                <p>Villas basses et duplex modernes, 4 à 5 pièces, dans un cadre calme et sécurisé.</p>
+            </div>
+
+            <div class="card">
+                <h3>Cité de Memni</h3>
+                <p>Mini-cité écologique avec logements familiaux modernes et accessibles.</p>
+            </div>
+
+            <div class="card">
+                <h3>Cité de Motobe</h3>
+                <p>Villas 4–5 pièces, environnement paisible et infrastructure de qualité.</p>
+            </div>
+
+            <div class="card">
+                <h3>Cité d’Ouguedoumé</h3>
+                <p>Villas modernes avec prestations haut standing et espaces verts.</p>
+            </div>
+
         </div>
 
-        <div class="card">
-            <img src="motobe.jpg" alt="Villas 4 à 5 pièces – Cité de Motobe">
-            <h3>Cité de Motobe</h3>
-            <p>Villas 4–5 pièces, environnement paisible et infrastructures de qualité.</p>
-        </div>
+    </section>
 
-        <div class="card">
-            <img src="ouguedoume.jpg" alt="Villas 4 à 5 pièces – Cité d’Ouguedoumé">
-            <h3>Cité d’Ouguedoumé</h3>
-            <p>Villas modernes avec prestations haut standing et espaces verts.</p>
-        </div>
-
-    </div> <!-- fin de .grid -->
-</div> <!-- fin de .container -->
+</body>
+</html>
