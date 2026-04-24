@@ -5,96 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>À propos – DM IMMOBILIER</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #f7e9c4, #e0c27b);
-            color: #2c2c2c;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 40px;
-        }
-
-        .logo-dm {
-            width: 150px;
-            height: auto;
-        }
-
-        .logo-gea {
-            width: 400px;
-            height: auto;
-        }
-
-        nav a {
-            margin: 0 15px;
-            color: #2c2c2c;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 16px;
-        }
-
-        nav a:hover {
-            color: #3a7f5a;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
-            background: rgba(255,255,255,0.7);
-            border-radius: 15px;
-        }
-
-        h1 {
-            text-align: center;
-            font-size: 32px;
-        }
-
-        p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-    </style>
+    <!-- LIEN CSS GLOBAL -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <div class="logos">
-        <img src="logo.png" class="logo-dm" alt="Logo DM IMMOBILIER">
-        <img src="logo-gea.png" class="logo-gea" alt="Logo GEA">
-    </div>
+    <!-- HEADER GLOBAL (identique à index.html) -->
+    <header>
+        <div class="logos">
+            <img src="logo.png" class="logo-dm" alt="Logo DM IMMOBILIER">
+            <img src="logo-gea.png" class="logo-gea" alt="Logo GEA">
+        </div>
 
-    <nav>
-        <a href="index.html">Accueil</a>
-        <a href="a-propos.html">À propos</a>
-        <a href="direction.html">Direction</a>
-        <a href="biens.html">Nos biens</a>
-        <a href="projets.html">Projets</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="a-propos.html" class="active">À propos</a>
+            <a href="direction.html">Direction</a>
+            <a href="biens.html">Nos biens</a>
+            <a href="projets.html">Projets</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-<div class="container">
-    <h1>À propos de DM IMMOBILIER</h1>
+    <!-- CONTENU -->
+    <section class="page-content fade-in">
 
-    <p>
-        DM IMMOBILIER est une entreprise visionnaire dédiée à la création de mini-cités modernes,
-        écologiques et accessibles. Notre mission est de transformer les villages et zones reculées
-        en espaces de vie harmonieux, sécurisés et adaptés aux besoins des familles.
-    </p>
+        <h1>À propos de DM IMMOBILIER</h1>
 
-    <p>
-        Nous croyons en un habitat durable, respectueux de l’environnement et pensé pour offrir
-        confort, modernité et bien-être. Grâce à nos projets innovants, nous contribuons à bâtir
-        un avenir meilleur pour les générations futures.
-    </p>
-</div>
+        <p>
+            DM IMMOBILIER est une entreprise visionnaire dédiée à la création de mini-cités modernes,
+            écologiques et accessibles. Notre mission est de transformer les villages et zones reculées
+            en espaces de vie harmonieux, sécurisés et adaptés aux besoins des familles.
+        </p>
+
+        <p>
+            Nous croyons en un habitat durable, respectueux de l’environnement et pensé pour offrir
+            confort, modernité et bien-être. Grâce à nos projets innovants, nous contribuons à bâtir
+            un avenir meilleur pour les générations futures.
+        </p>
+
+    </section>
 
 </body>
 </html>
