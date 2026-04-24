@@ -5,124 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact – DM IMMOBILIER</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #f7e9c4, #e0c27b);
-            color: #2c2c2c;
-        }
-
-        header {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            padding: 20px 40px;
-        }
-
-        .logo {
-            width: 260px;
-            filter: drop-shadow(0px 0px 6px rgba(0,0,0,0.25));
-        }
-
-        nav {
-            margin-left: 40px;
-        }
-
-        nav a {
-            margin: 0 15px;
-            color: #2c2c2c;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 16px;
-            padding: 10px 12px;
-        }
-
-        nav a:hover {
-            color: #3a7f5a;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
-            background: rgba(255,255,255,0.7);
-            border-radius: 15px;
-        }
-
-        h1 {
-            text-align: center;
-            font-size: 32px;
-            margin-bottom: 30px;
-        }
-
-        .info {
-            font-size: 18px;
-            line-height: 1.7;
-            margin-bottom: 20px;
-        }
-
-        .contact-box {
-            background: white;
-            border: 3px solid #f4d27a;
-            padding: 20px;
-            border-radius: 12px;
-            font-size: 18px;
-            line-height: 1.8;
-        }
-
-        a {
-            color: #3a7f5a;
-            font-weight: bold;
-        }
-    </style>
+    <!-- CSS GLOBAL -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <div class="logos">
-        <img src="logo.png" class="logo-dm" alt="Logo DM IMMOBILIER">
-        <img src="logo-gea.png" class="logo-gea" alt="Logo GEA">
-    </div>
+    <!-- HEADER GLOBAL -->
+    <header>
+        <div class="logos">
+            <img src="logo.png" class="logo-dm" alt="Logo DM IMMOBILIER">
+            <img src="logo-gea.png" class="logo-gea" alt="Logo GEA">
+        </div>
 
-    <nav>
-        <a href="index.html">Accueil</a>
-        <a href="a-propos.html">À propos</a>
-        <a href="direction.html">Direction</a>
-        <a href="biens.html">Nos biens</a>
-        <a href="projets.html">Projets</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="a-propos.html">À propos</a>
+            <a href="direction.html">Direction</a>
+            <a href="biens.html">Nos biens</a>
+            <a href="projets.html">Projets</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
 
-<div class="container">
-    <h1>Contactez-nous</h1>
+    <!-- CONTENU -->
+    <section class="page-content fade-in">
 
-    <p class="info">
-        Pour toute information concernant nos projets immobiliers, nos terrains, 
-        ou pour toute demande de partenariat, DM IMMOBILIER reste à votre disposition.
-    </p>
+        <h1>Contactez-nous</h1>
 
-    <div class="contact-box">
-        <p><strong>📍 Adresse :</strong> Abidjan, Côte d’Ivoire</p>
-
-        <p><strong>📞 Téléphone Côte d’Ivoire :</strong><br>
-        +225 07 98 84 15 46 (WhatsApp)<br>
-        +225 07 10 09 57 34</p>
-
-        <p><strong>📞 Téléphone France :</strong><br>
-        +33 7 53 53 72 65 (WhatsApp)</p>
-
-        <p><strong>📧 E-mail :</strong> groupeeliteafrica@yahoo.fr</p>
-
-        <p><strong>🌐 Site web :</strong> 
-            <a href="https://dm-immobilier.github.io" target="_blank">
-                dm-immobilier.github.io
-            </a>
+        <p>
+            Pour toute information concernant nos projets immobiliers, nos terrains, 
+            ou pour toute demande de partenariat, DM IMMOBILIER reste à votre disposition.
         </p>
-    </div>
-</div>
+
+        <div class="contact-box">
+            <p><strong>📍 Adresse :</strong> Abidjan, Côte d’Ivoire</p>
+
+            <p><strong>📞 Téléphone Côte d’Ivoire :</strong><br>
+            +225 07 98 84 15 46 (WhatsApp)<br>
+            +225 07 10 09 57 34</p>
+
+            <p><strong>📞 Téléphone France :</strong><br>
+            +33 7 53 53 72 65 (WhatsApp)</p>
+
+            <p><strong>📧 E-mail :</strong> groupeeliteafrica@yahoo.fr</p>
+
+            <p><strong>🌐 Site web :</strong> 
+                <a href="https://dm-immobilier.github.io" target="_blank">
+                    dm-immobilier.github.io
+                </a>
+            </p>
+        </div>
+
+    </section>
 
 </body>
 </html>
