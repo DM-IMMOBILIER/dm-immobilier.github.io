@@ -1,167 +1,150 @@
-/* --- RESET GLOBAL --- */
+/* ------------------------------
+   RESET
+--------------------------------*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-/* --- BACKGROUND GLOBAL (BLEU SATINÉ) --- */
 body {
-    background: linear-gradient(135deg, #0a3d62 0%, #06466f 40%, #052c47 100%);
-    color: white;
-    line-height: 1.6;
-    max-width: 1200px;      /* Empêche le site d’être géant */
-    margin: 0 auto;         /* Centre le site */
+    background-color: #f8f8f8;
+    color: #333;
 }
 
-/* --- HEADER --- */
+/* ------------------------------
+   HEADER + NAVIGATION
+--------------------------------*/
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
-    background: #0a1a3b;
+    background: #000;
 }
 
-/* Bloc logos */
-.logos {
+.logo {
+    width: 160px;
+}
+
+nav ul {
+    list-style: none;
     display: flex;
-    align-items: center;
-    gap: 20px;
+    gap: 25px;
 }
 
-/* Logo DM */
-.logo-dm {
-    width: 120px;   /* Taille PRO */
-    height: auto;
-}
-
-/* Logo GEA */
-.logo-gea {
-    width: 180px;   /* Taille PRO (au lieu de 400px !) */
-    height: auto;
-    animation: reveal 1.2s ease-out;
-}
-
-@keyframes reveal {
-    0% { opacity: 0; transform: scale(0.85); }
-    100% { opacity: 1; transform: scale(1); }
-}
-
-/* --- NAVIGATION --- */
-nav a {
-    color: white;
-    margin-left: 20px;
+nav ul li a {
     text-decoration: none;
-    font-weight: bold;
+    color: white;
+    font-weight: 500;
     transition: 0.3s;
-    font-size: 0.95rem; /* Réduction pour éviter l’effet géant */
 }
 
-nav a:hover,
-nav a.active {
-    color: gold;
+nav ul li a:hover,
+nav ul li a.active {
+    color: #d4af37; /* Or doré */
 }
 
-/* --- HERO SECTION --- */
+/* ------------------------------
+   SECTION ACCUEIL (HERO)
+--------------------------------*/
 .hero {
+    background: linear-gradient(135deg, #b8860b, #f5deb3);
+    color: white;
+    padding: 120px 20px;
     text-align: center;
-    padding: 40px 20px;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.35);
+    padding: 30px;
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 700px;
 }
 
 .hero h1 {
-    font-size: 1.8rem; /* Avant : 2rem → trop grand */
-    margin-bottom: 15px;
-    color: gold;
+    font-size: 48px;
+    margin-bottom: 10px;
 }
 
 .hero p {
-    max-width: 700px;
-    margin: auto;
-    font-size: 1rem;
+    font-size: 20px;
 }
 
-/* --- BUTTONS --- */
-.btn {
-    padding: 10px 20px;
-    margin: 8px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
-    font-size: 0.95rem;
+/* ------------------------------
+   PAGE DIRECTION
+--------------------------------*/
+.direction-section {
+    background: linear-gradient(135deg, #b8860b, #f5deb3);
+    padding: 80px 20px;
+    text-align: center;
 }
 
-.btn:hover {
-    transform: scale(1.05);
+.direction-card {
+    background: rgba(0, 0, 0, 0.35);
+    padding: 40px;
+    border-radius: 12px;
+    display: inline-block;
+    color: white;
+    max-width: 500px;
 }
 
-/* --- PAGE CONTENT --- */
-.page-content {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-}
-
-.page-content h1 {
-    color: gold;
-    margin-bottom: 20px;
-    font-size: 1.6rem;
-}
-
-.page-content h2 {
-    margin-top: 25px;
-    color: #2ecc71;
-    font-size: 1.3rem;
-}
-
-/* --- IMAGES --- */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* --- ANIMATIONS --- */
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 1.5s ease forwards;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-.slide-up {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: slideUp 1.2s ease forwards;
-}
-
-@keyframes slideUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-.photo-directrice {
-    width: 70px;
-    height: 70px;
+.direction-photo {
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     object-fit: cover;
-    margin-left: 20px;
-    border: 3px solid #f4d27a; /* Doré premium */
-    box-shadow: 0 0 8px rgba(0,0,0,0.3);
-}
-/* LIENS EN BLANC — SUPPRESSION DU VIOLET */
-a, a:visited, a:active {
-    color: #ffffff !important; /* Blanc pur */
-    font-weight: bold;
-    text-decoration: none;
+    margin-bottom: 20px;
+    border: 3px solid white;
 }
 
-a:hover {
-    color: #f4d27a !important; /* Doré premium au survol */
+.direction-card h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.direction-card p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* ------------------------------
+   FOOTER
+--------------------------------*/
+footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* ------------------------------
+   RESPONSIVE
+--------------------------------*/
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .direction-card {
+        width: 90%;
+    }
 }
