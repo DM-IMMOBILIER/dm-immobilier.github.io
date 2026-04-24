@@ -155,3 +155,13 @@ img {
     border: 3px solid #f4d27a; /* Doré premium */
     box-shadow: 0 0 8px rgba(0,0,0,0.3);
 }
+/* LIENS EN BLANC — SUPPRESSION DU VIOLET */
+a, a:visited, a:active {
+    color: #ffffff !important; /* Blanc pur */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f4d27a !important; /* Doré premium au survol */
+}
