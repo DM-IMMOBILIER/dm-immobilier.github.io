@@ -65,3 +65,20 @@ img {
 .header-right ul li a:hover {
     color: #d4af37; /* or couleur or */
 }
+/* -----------------------------------
+   FOOTER
+----------------------------------- */
+footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    margin-top: 40px;
+    border-top: 1px solid #333;
+}
+
+footer p {
+    margin: 0;
+    letter-spacing: 0.5px;
+}
