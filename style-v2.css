@@ -108,3 +108,62 @@ footer {
 footer p {
     margin: 0;
 }
+.btn {
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 8px;
+    transition: 0.3s ease;
+}
+
+/* Bleu DM */
+.btn-blue {
+    background-color: #0A2A66; /* Bleu DM profond */
+}
+.btn-blue:hover {
+    background-color: #0C347D;
+}
+
+/* Or premium */
+.btn-gold {
+    background-color: #D4AF37;
+    color: #000;
+}
+.btn-gold:hover {
+    background-color: #E5C45A;
+}
+
+/* Vert émeraude */
+.btn-green {
+    background-color: #0FAF6A;
+}
+.btn-green:hover {
+    background-color: #12C97A;
+}
+
+/* Rouge bordeaux */
+.btn-red {
+    background-color: #8A1C1C;
+}
+.btn-red:hover {
+    background-color: #A32424;
+}
+
+/* Violet royal */
+.btn-purple {
+    background-color: #5A2EA6;
+}
+.btn-purple:hover {
+    background-color: #6D3BC4;
+}
+
+/* Turquoise */
+.btn-turquoise {
+    background-color: #1BAFBF;
+}
+.btn-turquoise:hover {
+    background-color: #22C8D9;
+}
