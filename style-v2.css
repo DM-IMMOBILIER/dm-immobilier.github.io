@@ -167,3 +167,61 @@ footer p {
 .btn-turquoise:hover {
     background-color: #22C8D9;
 }
+/* LOGO À DROITE */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  background: #0b1b33;
+}
+
+.logo-img {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* IMAGE DU HERO */
+.hero-img {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 10px;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+/* STYLE DM-CONCIERGERIE */
+body {
+  background: #0b1b33;
+  color: #ffffff;
+}
+
+h1, h2, h3, h4 {
+  color: #f2c14f;
+}
+
+.prestation-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.prestation-num {
+  font-weight: 700;
+  color: #f2c14f;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background: #f2c14f;
+  color: #0b1b33;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+}
