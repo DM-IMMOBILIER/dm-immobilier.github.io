@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8"> 
-  <title>Conciergerie</title>
+  <meta charset="UTF-8">
+  <title>Conciergerie – DM‑CONCIERGERIE</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+<!-- STYLE SPÉCIAL POUR PAGE BLEUE DM-CONCIERGERIE -->
 <style>
   body {
-    background: #0b1b33; /* bleu foncé DM-IMMOBILIER */
+    background: #0b1b33; /* bleu foncé */
     color: #ffffff; /* texte blanc */
-  }
-
-  .prestation-card {
-    background: rgba(255,255,255,0.05); /* léger transparent */
-    border: 1px solid rgba(255,255,255,0.15);
-    color: #ffffff;
   }
 
   h1, h2, h3, h4 {
     color: #f2c14f; /* or premium */
   }
 
+  .prestation-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  .prestation-num {
+    font-weight: 700;
+    color: #f2c14f;
+    margin-bottom: 10px;
+  }
+
   .btn-primary {
     background: #f2c14f;
     color: #0b1b33;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
     font-weight: 600;
   }
 
-  .btn-secondary {
-    border: 1px solid #f2c14f;
-    color: #f2c14f;
+  .btn-primary:hover {
+    background: #ffda73;
   }
 </style>
 
 <header class="navbar">
-  <div class="logo">DM‑IMMOBILIER</div>
+  <div class="logo">DM‑CONCIERGERIE</div>
   <nav>
     <a href="index.html">Accueil</a>
     <a href="prestations.html">Prestations</a>
@@ -50,7 +62,7 @@
   <h1>Service de Conciergerie en Côte d’Ivoire</h1>
   <p style="max-width:700px; line-height:1.6;">
     Un service haut de gamme, moderne et personnalisé, destiné aux propriétaires,
-    locataires, voyageurs et entreprises. DM‑IMMOBILIER vous accompagne au quotidien
+    locataires, voyageurs et entreprises. DM‑CONCIERGERIE vous accompagne au quotidien
     avec une gestion opérationnelle complète, un confort optimal et une disponibilité 7j/7.
   </p>
 </section>
@@ -93,7 +105,7 @@
       <li>Accueil et départ des locataires</li>
       <li>Ménage professionnel</li>
       <li>Maintenance et réparations</li>
-      <li>Suivi des réservations (location courte durée)</li>
+      <li>Suivi des réservations</li>
       <li>Reporting mensuel</li>
     </ul>
 
@@ -144,7 +156,7 @@
 
     <div class="prestation-footer">
       <span class="prestation-prix">Sur devis</span>
-      <a href="contact.html" class="btn btn-primary btn-small">Commander ↗</a>
+      <a href="contact.html" class="btn-primary">Commander ↗</a>
     </div>
   </article>
 
