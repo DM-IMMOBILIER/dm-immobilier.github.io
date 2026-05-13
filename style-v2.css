@@ -309,3 +309,16 @@ body.accueil {
     text-align: center;
     line-height: 1.6;
 }
+.photo-direction {
+    width: 260px;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.bloc-direction {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.6;
+}
