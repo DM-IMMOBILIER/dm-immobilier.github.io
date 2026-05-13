@@ -249,3 +249,26 @@ h1, h2, h3, h4 {
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
+.btn {
+    display: inline-block;
+    padding: 16px 32px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.08);
+    opacity: 0.9;
+}
+
+.btn-blue { background: #0A1A3A; }
+.btn-gold { background: #D4AF37; color:#0A1A3A; }
+.btn-green { background: #1E8F5B; }
+.btn-red { background: #C0392B; }
+.btn-purple { background: #6C3483; }
+.btn-turquoise { background: #1ABC9C; }
