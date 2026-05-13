@@ -297,3 +297,9 @@ body.accueil {
     text-align: center;
     margin-top: 10px;
 }
+.photo-direction {
+    width: 260px; /* tu peux descendre à 230 si tu veux plus petit */
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto 20px auto; /* centre la photo */
+}
