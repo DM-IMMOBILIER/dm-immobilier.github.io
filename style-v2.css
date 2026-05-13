@@ -303,3 +303,9 @@ body.accueil {
     display: block;
     margin: 0 auto 20px auto; /* centre la photo */
 }
+.bloc-direction {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.6;
+}
