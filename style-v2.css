@@ -272,3 +272,11 @@ h1, h2, h3, h4 {
 .btn-red { background: #C0392B; }
 .btn-purple { background: #6C3483; }
 .btn-turquoise { background: #1ABC9C; }
+.page-conciergerie,
+.page-conciergerie p,
+.page-conciergerie li,
+.page-conciergerie h1,
+.page-conciergerie h2,
+.page-conciergerie h3 {
+    color: #0A1A3A; /* bleu nuit foncé */
+}
