@@ -391,10 +391,7 @@ body.accueil {
     background: linear-gradient(135deg, #D4AF37, #E5C45A); /* Or premium */
     color: #0A1A3A; /* Texte foncé pour contraste */
 }
-/* Texte bleu nuit sur fond clair */
-body, section, div, p, h1, h2, h3, h4, li {
-    color: #0A1A3A;
-}
+
 /* Exceptions : sections à fond foncé */
 .main-header *,
 footer *,
