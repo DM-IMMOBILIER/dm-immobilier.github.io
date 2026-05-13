@@ -271,3 +271,7 @@ h1, h2, h3, h4 {
 .page-conciergerie h3 {
     color: #0A1A3A; /* bleu nuit foncé */
 }
+body.accueil {
+    background: linear-gradient(to bottom, #0a3d62, #052c47);
+    color: white;
+}
