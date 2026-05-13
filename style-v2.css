@@ -395,3 +395,11 @@ body.accueil {
 body, section, div, p, h1, h2, h3, h4, li {
     color: #0A1A3A;
 }
+/* Exceptions : sections à fond foncé */
+.main-header *,
+footer *,
+body.accueil *,
+.page-conciergerie *,
+.projet-card {
+    color: inherit;
+}
