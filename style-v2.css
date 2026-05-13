@@ -403,3 +403,7 @@ body.accueil *,
 .projet-card {
     color: inherit;
 }
+/* Texte bleu nuit uniquement dans les sections à fond blanc */
+.section-blanche, .fond-blanc {
+    color: #0A1A3A;
+}
