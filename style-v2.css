@@ -8,11 +8,6 @@
     font-family: "Poppins", sans-serif;
 }
 
-body {
-    background: linear-gradient(to bottom, #0a3d62, #052c47); /* Bleu logo DM */
-    color: white;
-    line-height: 1.6;
-}
 
 /* Empêche les images géantes */
 img {
@@ -194,10 +189,6 @@ footer p {
 }
 
 /* STYLE DM-CONCIERGERIE */
-body {
-  background: #0b1b33;
-  color: #ffffff;
-}
 
 h1, h2, h3, h4 {
   color: #f2c14f;
