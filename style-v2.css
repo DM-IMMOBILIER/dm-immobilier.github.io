@@ -275,3 +275,11 @@ body.accueil {
     background: linear-gradient(to bottom, #0a3d62, #052c47);
     color: white;
 }
+.slogan {
+    font-size: 22px;
+    font-weight: 500;
+    color: #d4af37; /* Or premium */
+    margin-top: 10px;
+    text-align: center;
+    line-height: 1.4;
+}
