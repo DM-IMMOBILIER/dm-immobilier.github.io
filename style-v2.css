@@ -322,3 +322,60 @@ body.accueil {
     text-align: center;
     line-height: 1.6;
 }
+/* STYLE GLOBAL DES CARTES */
+.projet-card {
+    padding: 20px;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+}
+
+.projet-card:hover {
+    transform: translateY(-6px);
+    opacity: 0.95;
+}
+
+/* TITRES DES PROJETS */
+.projet-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+/* LIEU */
+.projet-lieu {
+    font-style: italic;
+    font-size: 15px;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+/* COULEURS DIFFÉRENTES POUR CHAQUE PROJET */
+.projet-card:nth-child(1) {
+    background: linear-gradient(135deg, #0A3D62, #145A8D); /* Bleu profond */
+}
+
+.projet-card:nth-child(2) {
+    background: linear-gradient(135deg, #8A1C1C, #B32424); /* Rouge bordeaux */
+}
+
+.projet-card:nth-child(3) {
+    background: linear-gradient(135deg, #0FAF6A, #12C97A); /* Vert émeraude */
+}
+
+.projet-card:nth-child(4) {
+    background: linear-gradient(135deg, #5A2EA6, #6D3BC4); /* Violet royal */
+}
+
+/* SECTION 2 (projets en étude) */
+.projets-grid:nth-of-type(2) .projet-card:nth-child(1) {
+    background: linear-gradient(135deg, #1BAFBF, #22C8D9); /* Turquoise */
+}
+
+.projets-grid:nth-of-type(2) .projet-card:nth-child(2) {
+    background: linear-gradient(135deg, #D4AF37, #E5C45A); /* Or premium */
+    color: #0A1A3A; /* Texte foncé pour contraste */
+}
