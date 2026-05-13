@@ -1,95 +1,113 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Conciergerie – DM‑CONCIERGERIE</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DM-CONCIERGERIE – Services Premium</title>
+    <link rel="stylesheet" href="style-v2.css">
 </head>
 
 <body>
 
-<style>
-  body {
-    background: #0b1b33;
-    color: #ffffff;
-  }
+<header class="main-header">
+    <div class="header-left">
+        <img src="logo.png" alt="Logo DM-IMMOBILIER" class="logo-dm">
+    </div>
 
-  h1, h2, h3, h4 {
-    color: #f2c14f;
-  }
+    <div class="header-center">
+        <img src="logo-gea.png" alt="Logo GEA" class="logo-gea">
+    </div>
 
-  .prestation-card {
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.15);
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
-
-  .prestation-num {
-    font-weight: 700;
-    color: #f2c14f;
-    margin-bottom: 10px;
-  }
-
-  .btn-primary {
-    background: #f2c14f;
-    color: #0b1b33;
-    padding: 8px 16px;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: 600;
-  }
-
-  .btn-primary:hover {
-    background: #ffda73;
-  }
-
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 40px;
-    background: #0b1b33;
-  }
-
-  .logo-img {
-    height: 55px;
-    width: auto;
-    object-fit: contain;
-    display: block;
-  }
-</style>
-
-<header class="navbar">
-
-  <nav>
-    <a href="index.html">Accueil</a>
-    <a href="prestations.html">Prestations</a>
-    <a href="conciergerie.html">Conciergerie</a>
-    <a href="investisseurs.html">Investisseurs</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <div class="logo">
-    <img src="logo-dmc.png" alt="Logo DM Conciergerie" class="logo-img">
-  </div>
-
+    <nav class="header-right">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="biens.html">Biens</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="conciergerie.html" class="active">Conciergerie</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="direction.html">Direction</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 
+
+<!-- SECTION CONCIERGERIE -->
+<section class="page-conciergerie">
+
+    <div class="conciergerie-container">
+
+        <!-- PHOTO DG À GAUCHE -->
+        <div class="conciergerie-photo">
+            <img src="dg.jpg" alt="Directeur Général" class="photo-dg">
+        </div>
+
+        <!-- TEXTE À DROITE -->
+        <div class="conciergerie-texte">
+
+            <h1>Service de Conciergerie en Côte d’Ivoire</h1>
+
+            <p>
+                Un service de conciergerie est une prestation d’assistance personnalisée destinée aux propriétaires,
+                locataires, voyageurs ou entreprises. Contrairement aux agences immobilières traditionnelles,
+                la conciergerie se concentre sur la gestion opérationnelle, le confort, la disponibilité et
+                l’accompagnement quotidien des clients.
+            </p>
+
+            <h2>Objectifs du service</h2>
+            <ul>
+                <li>Accompagnement complet des propriétaires</li>
+                <li>Services personnalisés pour faciliter le quotidien</li>
+                <li>Expérience premium pour voyageurs et résidents</li>
+                <li>Gestion moderne et professionnelle</li>
+            </ul>
+
+            <h2>Services proposés</h2>
+            <h3>Pour les propriétaires</h3>
+            <ul>
+                <li>Gestion des clés</li>
+                <li>Accueil et départ des locataires</li>
+                <li>Entretien et ménage professionnel</li>
+                <li>Maintenance et réparations</li>
+                <li>Suivi des réservations</li>
+                <li>Reporting mensuel</li>
+            </ul>
+
+            <h3>Pour les locataires et voyageurs</h3>
+            <ul>
+                <li>Assistance 24/7</li>
+                <li>Transferts (aéroport, chauffeur privé)</li>
+                <li>Réservations (restaurants, activités)</li>
+                <li>Courses et services à domicile</li>
+                <li>Blanchisserie</li>
+            </ul>
+
+            <h3>Pour les entreprises</h3>
+            <ul>
+                <li>Gestion de logements pour expatriés</li>
+                <li>Organisation logistique</li>
+                <li>Services de secrétariat</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <!-- BOUTONS MULTICOLORES -->
+    <div class="boutons-accueil">
+        <a href="contact.html" class="btn btn-blue">Nous contacter</a>
+        <a href="prestations.html" class="btn btn-gold">Nos prestations</a>
+        <a href="tarifs.html" class="btn btn-green">Tarifs</a>
+        <a href="urgence.html" class="btn btn-red">Assistance 24/7</a>
+        <a href="investisseurs.html" class="btn btn-purple">Investisseurs</a>
+        <a href="a-propos.html" class="btn btn-turquoise">À propos</a>
+    </div>
+
 </section>
 
-<section class="hero" style="padding:60px 40px;">
-  <h1>Service de Conciergerie en Côte d’Ivoire</h1><img src="ok la directrice DM -CONCIERGERIE.png" alt="Directrice DM‑Conciergerie" class="hero-img">
 
-  <p style="max-width:700px; line-height:1.6;">
-    Un service haut de gamme, moderne et personnalisé, destiné aux propriétaires,
-    locataires, voyageurs et entreprises. DM‑CONCIERGERIE vous accompagne au quotidien
-    avec une gestion opérationnelle complète, un confort optimal et une disponibilité 7j/7.
-  </p>
-</section>
-
-<!-- (le reste de ta page est correct) -->
+<footer>
+    <p>© 2026 DM-CONCIERGERIE – Tous droits réservés.</p>
+</footer>
 
 </body>
 </html>
