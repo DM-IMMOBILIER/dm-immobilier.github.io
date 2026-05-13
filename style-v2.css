@@ -383,7 +383,7 @@ body.accueil {
 }
 
 .projets-grid:nth-of-type(2) .projet-card:nth-child(2) {
-    background: linear-gradient(135deg, #D4AF37, #E5C45A); /* Or premium */
+    background: linear-gradient(135deg, #D4AF37, #E5C45A); /* bleu océan */
     color: #0A1A3A; /* Texte foncé pour contraste */
 }
 
