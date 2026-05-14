@@ -554,3 +554,11 @@ body.accueil {
 #header-fixe-final .hf-menu a:hover {
     color: #d4af37 !important;
 }
+/* CORRECTION DÉFINITIVE : les logos ne doivent PAS être redimensionnés */
+.logo-dm,
+.logo-gea {
+    max-width: none !important;
+    width: auto !important;
+    height: 80px !important;
+    display: inline-block !important;
+}
