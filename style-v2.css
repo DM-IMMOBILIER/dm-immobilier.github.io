@@ -456,3 +456,25 @@ body.accueil {
     background: white;
     color: #0a1a3b;
 }
+/* ===== HEADER AVEC DEUX LOGOS ===== */
+.main-header {
+    width: 100%;
+    padding: 10px 30px;
+    background: #0a1a3b;
+    display: flex;
+    justify-content: center; /* on centre le groupe */
+    align-items: center;
+    gap: 40px; /* espace entre les deux logos */
+}
+
+/* Logo DM à gauche */
+.logo-dm {
+    height: 70px;
+    display: block;
+}
+
+/* Logo GEA à droite */
+.logo-gea {
+    height: 70px;
+    display: block;
+}
