@@ -323,3 +323,60 @@ body.accueil {
 .bloc-direction ul li {
     margin-bottom: 8px;
 }
+/* FORÇAGE TOTAL DE LA PAGE DIRECTION */
+.page-direction {
+    max-width: 800px !important;
+    margin: 40px auto !important;
+    padding: 40px 20px !important;
+    text-align: center !important;
+    color: #0A1A3A !important;
+}
+
+.page-direction .photo-direction {
+    width: 260px !important;
+    border-radius: 12px !important;
+    display: block !important;
+    margin: 0 auto 25px auto !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25) !important;
+}
+
+.page-direction .bloc-direction {
+    line-height: 1.6 !important;
+    font-size: 17px !important;
+    text-align: center !important;
+}
+
+.page-direction .citation {
+    font-style: italic !important;
+    font-size: 18px !important;
+    color: #d4af37 !important;
+    margin-bottom: 20px !important;
+}
+
+.page-direction .bloc-direction h1 {
+    font-size: 28px !important;
+    color: #d4af37 !important;
+    margin-bottom: 5px !important;
+}
+
+.page-direction .bloc-direction h2 {
+    font-size: 18px !important;
+    color: white !important;
+    opacity: 0.9 !important;
+    margin-bottom: 20px !important;
+}
+
+.page-direction .bloc-direction h3 {
+    margin-top: 25px !important;
+    color: #d4af37 !important;
+}
+
+.page-direction .bloc-direction ul {
+    list-style: none !important;
+    padding: 0 !important;
+    margin-top: 10px !important;
+}
+
+.page-direction .bloc-direction ul li {
+    margin-bottom: 8px !important;
+}
