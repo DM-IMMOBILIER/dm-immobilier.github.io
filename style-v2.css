@@ -31,9 +31,10 @@ img {
 
 /* Logo DM à gauche */
 .logo-dm {
-    width: 150px;
+    width: 180px;
     height: auto;
 }
+
 
 /* Logo GEA au centre */
 .logo-gea {
