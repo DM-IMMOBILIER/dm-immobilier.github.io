@@ -33,6 +33,11 @@ img {
     width: 150px; /* taille d’origine */
     height: auto;
 }
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+}
+    color: #d4af37 !important;
 
 /* Logo GEA au centre */
 .logo-gea {
