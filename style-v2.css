@@ -151,9 +151,13 @@ footer p {
 /* -----------------------------------
    DM-CONCIERGERIE
 ----------------------------------- */
-h1, h2, h3, h4 {
-  color: #f2c14f;
+.page-conciergerie h1,
+.page-conciergerie h2,
+.page-conciergerie h3,
+.page-conciergerie h4 {
+    color: #f2c14f;
 }
+
 
 .prestation-card {
   background: rgba(255,255,255,0.05);
