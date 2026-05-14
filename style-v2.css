@@ -478,3 +478,16 @@ body.accueil {
     height: 70px;
     display: block;
 }
+.main-header {
+    width: 100%;
+    background: #0a1a3b;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-dm,
+.logo-gea {
+    height: 70px;
+}
