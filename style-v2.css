@@ -491,3 +491,24 @@ body.accueil {
 .logo-gea {
     height: 70px;
 }
+/* ===== HEADER SIMPLE, NON DÉFORMÉ ===== */
+.header-simple {
+    width: 100%;
+    background: #0a1a3b;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo DM à gauche */
+.logo-left {
+    height: 70px;
+    width: auto;
+}
+
+/* Logo GEA à droite */
+.logo-right {
+    height: 70px;
+    width: auto;
+}
